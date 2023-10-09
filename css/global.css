@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
