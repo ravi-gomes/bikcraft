@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor-11);
 }
 
 a {
@@ -13,13 +14,13 @@ h1,
 h2,
 h3,
 a,
-img {
+img,
+h4 {
   margin: 0px;
   padding: 0px;
 }
 
-img,
-svg {
+img {
   max-width: 100%;
   display: block;
 }
@@ -28,4 +29,8 @@ ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
+}
+
+img[src$=".jpg"] {
+  border-radius: 4px;
 }
