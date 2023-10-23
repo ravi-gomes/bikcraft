@@ -15,7 +15,8 @@ h2,
 h3,
 a,
 img,
-h4 {
+h4,
+blockquote {
   margin: 0px;
   padding: 0px;
 }
