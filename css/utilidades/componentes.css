@@ -20,14 +20,39 @@
   font-weight: bold;
   font-family: "poppins";
   font-weight: 600;
+  max-width: max-content;
 }
 
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
+.secundario {
+  display: inline-block;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  padding: 1rem 2rem;
+  background-color: var(--cor-10);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: var(--cor-4);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "poppins";
+  font-weight: 600;
+  max-width: max-content;
+}
+
+.secundario:hover {
+  background: var(--cor-8);
+}
+
 @media (max-width: 800px) {
   .botao {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  .secundario {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
   }
