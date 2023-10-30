@@ -1,0 +1,129 @@
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#bicicleta .titulo p {
+  text-transform: uppercase;
+}
+
+.bicicleta-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-imagens img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicleta-imagens img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-conteudo > p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 8px 12px;
+  align-items: center;
+  justify-items: start;
+  margin-bottom: 40px;
+}
+
+.bicicleta-comprar a {
+  grid-row: span 2;
+}
+
+.bicicleta-comprar span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--cor-12);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.bicicleta-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  gap: 32px;
+  padding: 32px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-informacoes img {
+  width: 24px;
+}
+
+.bicicleta-informacoes li {
+  display: grid;
+  gap: 8px;
+}
+
+.bicicleta-conteudo > h2 {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.015rem;
+}
+
+.bicicletas-ficha {
+  padding: 32px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+}
+
+.bicicletas-ficha li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+.bicicletas-ficha li:last-child {
+  border-bottom: none;
+}
+
+.bicicletas-ficha span {
+  color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bicicleta-imagens {
+    grid-row: 2;
+  }
+  .bicicleta-imagens img {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicleta-informacoes {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-comprar {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-imagens img {
+    min-width: 100px;
+  }
+}
